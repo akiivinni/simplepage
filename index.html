@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   .box {
+			background-color: yellowgreen;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+        .box a
+        {
+            display: inline-block;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 3px;
+
+        }
+        .modal
+        {
+            display: flex;
+            position:absolute;
+            text-align: center;
+            transform: all 5s ease;
+            visibility: hidden;
+            opacity: 0.1;
+            text-align: center;
+            top: 10px;
+            bottom:0;
+            left:0;
+            right:0;
+
+        }
+        .content {
+			position: absolute;
+			background: white;
+			width: 400px;
+			padding: 1em 2em;
+			border-radius: 4px;
+		} 
+		.modal:target {
+			visibility: visible;
+			opacity: 1;
+		}
+        form{
+            color:blueviolet;
+            box-sizing: border-box;
+            border: 10px pink;
+            background-color:mediumturquoise;
+            
+        }
+        form input[type]
+        {
+            margin: 10PX;
+            padding: 10PX;
+        }
+        button
+        {
+            background-color: chartreuse;
+            color:blueviolet;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: border;
+        }
+   </style>
+</head>
+<body>
+    <div class = "box">
+        <a href = "#clickbox">chatbox</a>
+    </div>
+    
+    <div class = "modal" id = "clickbox">
+        <div class = "content">
+            <form>
+               Username: <input type = "text" name = "" placeholder = "Username"><br/>
+               Password: <input type = "password" placeholder = "password"><br/>
+               <button>let's chat </button>
+
+            </form>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit similique maxime architecto, praesentium atque illum maiores et officia earum necessitatibus qui minus modi quaerat enim, odio magni sit tempora.</p>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
